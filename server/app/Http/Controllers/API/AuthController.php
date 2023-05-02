@@ -9,7 +9,6 @@ use App\Models\User;
 use App\Traits\HttpResponses;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Auth\Events\Registered;
 use App\Mail\RegistrationConfirmation;
 use Illuminate\Support\Facades\Mail;
 
