@@ -21,8 +21,8 @@ use App\Http\Controllers\GoogleAuthenticationController;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-// Route::get('auth/google/redirect', [GoogleAuthenticationController::class, 'redirect']);
-// Route::get('auth/google/callback', [GoogleAuthenticationController::class, 'callback']);
+Route::get('auth/google/redirect', [GoogleAuthenticationController::class, 'redirect']);
+Route::get('auth/google/callback', [GoogleAuthenticationController::class, 'callback']);
 
 // Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
